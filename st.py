@@ -3,13 +3,12 @@ import streamlit as st
 st.set_page_config(
     page_title="Portal de Dashboards",
     layout="wide",
-    page_icon = "ingetek-logo.png"
+    page_icon="ingetek-logo.png"
 )
 
 # logo de ingetek completo
 st.image("ingetek-logo-completo.png", width=300)
 st.title("BI Portal")
-
 
 # Diccionario: Unidad de negocio -> Dashboards
 dashboards = {
@@ -76,13 +75,17 @@ def render_card(title, url, desc, icon, color):
     </div>
     """, unsafe_allow_html=True)
 
-# Renderizamos por unidad de negocio
-for area, reports in dashboards.items():
-    st.subheader(area)
-    report_list = list(reports.items())
-    cols_per_row = 3  # Ajustable según diseño
-    for i in range(0, len(report_list), cols_per_row):
-        cols = st.columns(cols_per_row)
-        for j, (name, info) in enumerate(report_list[i:i+cols_per_row]):
-            with cols[j]:
-                render_card(name, info["url"], info["desc"], info["icon"], info["color"])
+
+# 🔹 Crear pestañas por área de negocio
+tabs = st.tabs(list(dashboards.keys()))
+
+for (area, reports), tab in zip(dashboards.items(), tabs):
+    with tab:
+        report_list = list(reports.items())
+        cols_per_row = 3  # Ajustable según diseño
+        for i in range(0, len(report_list), cols_per_row):
+            cols = st.columns(cols_per_row)
+            for j, (name, info) in enumerate(report_list[i:i+cols_per_row]):
+                with cols[j]:
+                    render_card(name, info["url"], info["desc"], info["icon"], info["color"])
+
