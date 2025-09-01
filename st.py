@@ -17,13 +17,13 @@ dashboards = {
             "url": "https://lookerstudio.google.com/s/tCRtYVpGMIU",
             "desc": "Control de movimientos de documentos por área",
             "icon": "💰",
-            "color": "#00A89E"
+            "color": "#18515F"
         },
         "Costos de Fabricación": {
             "url": "https://lookerstudio.google.com/s/hvVr9Q0O4LM",
             "desc": "Análisis de costos por planta y línea de producción",
             "icon": "📊",
-            "color": "#00A89E"
+            "color": "#18515F"
         }
     },
     "Facturación": {
@@ -31,7 +31,7 @@ dashboards = {
             "url": "https://lookerstudio.google.com/reporting/f48f9cec-0818-40ce-88d8-40230da24336",
             "desc": "Reporte de facturación consolidado por mes",
             "icon": "🧾",
-            "color": "#00A89E"
+            "color": "#18515F"
         }
     },
     "Operación": {
@@ -39,7 +39,7 @@ dashboards = {
             "url": "https://lookerstudio.google.com/s/u80uqadK7oQ",
             "desc": "Toneladas producidas por planta y turno",
             "icon": "🏭",
-            "color": "#00A89E"
+            "color": "#18515F"
         }
     }
 }
