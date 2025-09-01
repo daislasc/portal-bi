@@ -1,7 +1,14 @@
 import streamlit as st
 
-st.set_page_config(page_title="Portal de Dashboards", layout="wide")
-st.title("📊 Portal de Dashboards Ingetek")
+st.set_page_config(
+    page_title="Portal de Dashboards",
+    layout="wide",
+    page_icon = "ingetek-logo.png"
+)
+
+st.image("ingetek-logo-completo.png", width=300)
+st.title("BI Portal")
+
 
 # Diccionario: Unidad de negocio -> Dashboards
 dashboards = {
