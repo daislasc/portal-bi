@@ -6,7 +6,7 @@ st.set_page_config(
     page_icon = "ingetek-logo.png"
 )
 
-# logo de ingetek
+# logo de ingetek completo
 st.image("ingetek-logo-completo.png", width=300)
 st.title("BI Portal")
 
