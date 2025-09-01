@@ -3,7 +3,7 @@ import streamlit as st
 st.set_page_config(
     page_title="Portal de Dashboards",
     layout="wide",
-    page_icon="ingetek-logo.png"
+    page_icon="ingetek-logo-completo.png"
 )
 
 # logo de ingetek completo
@@ -27,7 +27,7 @@ dashboards = {
         }
     },
     "Facturación": {
-        "Facturación General": {
+        "Embarques y Facturas": {
             "url": "https://lookerstudio.google.com/reporting/f48f9cec-0818-40ce-88d8-40230da24336",
             "desc": "Reporte de facturación consolidado por mes",
             "icon": "🧾",
