@@ -21,7 +21,7 @@ dashboards = {
     },
     "Facturación": {
         "Facturación General": {
-            "url": "https://lookerstudio.google.com/s/hvVr9Q0O4LM",
+            "url": "https://lookerstudio.google.com/reporting/f48f9cec-0818-40ce-88d8-40230da24336",
             "desc": "Reporte de facturación consolidado por mes",
             "icon": "🧾",
             "color": "#f57c00"
