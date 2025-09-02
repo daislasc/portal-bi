@@ -24,6 +24,13 @@ dashboards = {
                     "desc": "Reporte de embarques y sus facturaciones consolidadas.",
                     "icon": "🧾",
                     "color": "#18515F"
+        },
+
+        "Resumen de Órdenes": {
+                    "url": "https://lookerstudio.google.com/reporting/b5d47fc5-0c79-43ba-aa0f-774fc41378a1",
+                    "desc": "Resumenes de Órdenes y Control Code",
+                    "icon": "🧾",
+                    "color": "#18515F"
         }
     },
 
