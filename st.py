@@ -19,27 +19,30 @@ dashboards = {
             "icon": "🏭",
             "color": "#18515F"
         },
-    "Embarques y Facturas": {
-                "url": "https://lookerstudio.google.com/reporting/f48f9cec-0818-40ce-88d8-40230da24336",
-                "desc": "Reporte de embarques y sus facturaciones consolidadas.",
-                "icon": "🧾",
-                "color": "#18515F"
-            }
+        "Embarques y Facturas": {
+                    "url": "https://lookerstudio.google.com/reporting/f48f9cec-0818-40ce-88d8-40230da24336",
+                    "desc": "Reporte de embarques y sus facturaciones consolidadas.",
+                    "icon": "🧾",
+                    "color": "#18515F"
+        }
     },
 
     "Contabilidad y Finanzas": {
-        "Kardex Documentos": {
-            "url": "https://lookerstudio.google.com/s/tCRtYVpGMIU",
-            "desc": "Control de movimientos de documentos por área",
-            "icon": "💰",
-            "color": "#18515F"
-        },
         "Costos de Fabricación": {
             "url": "https://lookerstudio.google.com/s/hvVr9Q0O4LM",
             "desc": "Análisis de costos por planta agrupadores de gestión",
             "icon": "📊",
             "color": "#18515F"
             }
+    },
+
+    "Back-Office":{
+        "Kardex Documentos": {
+            "url": "https://lookerstudio.google.com/s/tCRtYVpGMIU",
+            "desc": "Control de movimientos de documentos por área",
+            "icon": "💰",
+            "color": "#18515F"
+        }
     }
 }
 
