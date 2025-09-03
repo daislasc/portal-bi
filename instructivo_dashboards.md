@@ -1,4 +1,4 @@
-# 📘 Instructivo para plantilla de Embarques en Looker Studio
+# Instructivo para plantilla de Embarques en Looker Studio
 
 1. **Define tu objetivo**  
    Antes de abrir Looker Studio, responde: ¿qué pregunta de negocio quiero resolver?
