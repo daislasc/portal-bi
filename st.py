@@ -25,6 +25,12 @@ dashboards = {
                     "icon": "🧾",
                     "color": "#18515F"
         },
+        "Plantilla Embarques": {
+            "url": "https://lookerstudio.google.com/reporting/cc156025-54b6-48ca-8d4b-6228ba6bae7e/preview",
+            "desc": "Personaliza tu propio reporte de Embarques",
+            "icon": "🎨",
+            "color": "#18515F"
+        },
 
         "Resumen de Órdenes": {
                     "url": "https://lookerstudio.google.com/reporting/b5d47fc5-0c79-43ba-aa0f-774fc41378a1",
