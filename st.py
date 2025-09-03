@@ -51,9 +51,9 @@ dashboards = {
         }
     },
 
-    "Plantillas/Templates": {
+    "Documentación y Autoservicio": {
         "Plantilla Embarques": {
-            "url": "https://lookerstudio.google.com/reporting/cc156025-54b6-48ca-8d4b-6228ba6bae7e/preview",
+            "url": "https://lookerstudio.google.com/reporting/f20a067f-9959-41fc-9ebd-4abd930b0e3e/preview",
             "desc": "Personaliza tu propio reporte de Embarques",
             "icon": "🎨",
             "color": "#18515F"
