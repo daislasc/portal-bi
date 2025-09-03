@@ -11,7 +11,7 @@ st.image("ingetek-logo-completo.png", width=300)
 st.title("BI Portal")
 
 # 📘 Leer instructivo desde archivo .md
-with open("guia_looker.md", "r", encoding="utf-8") as f:
+with open("instructivo_dashboards.md", "r", encoding="utf-8") as f:
     instructivo_text = f.read()
 
 # Diccionario: Unidad de negocio -> Dashboards
