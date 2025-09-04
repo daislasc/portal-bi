@@ -17,19 +17,19 @@ with open("instructivo_dashboards.md", "r", encoding="utf-8") as f:
 # Diccionario: Unidad de negocio -> Dashboards
 dashboards = {
     "Operación": {
-        "Producción": {
+        "Processing Tag": {
             "url": "https://lookerstudio.google.com/s/u80uqadK7oQ",
             "desc": "Peso fabricado por tipos de Máquina",
             "icon": "🏭",
             "color": "#18515F"
         },
-        "Embarques y Facturas": {
+        "Shipping Tickets": {
                     "url": "https://lookerstudio.google.com/reporting/f48f9cec-0818-40ce-88d8-40230da24336",
                     "desc": "Reporte de embarques y sus facturaciones consolidadas.",
                     "icon": "🚚",
                     "color": "#18515F"
         },
-        "Resumen de Órdenes": {
+        "Control Code (Order Summary)": {
                     "url": "https://lookerstudio.google.com/reporting/b5d47fc5-0c79-43ba-aa0f-774fc41378a1",
                     "desc": "Resumenes de Órdenes y Control Code",
                     "icon": "🧾",
@@ -56,7 +56,7 @@ dashboards = {
     },
 
     "Documentación y Autoservicio": {
-        "Plantilla Embarques": {
+        "Plantilla - Shipping Tickets": {
             "url": "https://lookerstudio.google.com/reporting/f20a067f-9959-41fc-9ebd-4abd930b0e3e/preview",
             "desc": "Personaliza tu propio reporte de Embarques",
             "icon": "🎨",
