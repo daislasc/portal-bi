@@ -19,19 +19,19 @@ dashboards = {
     "Operación": {
         "Processing Tag": {
             "url": "https://lookerstudio.google.com/s/u80uqadK7oQ",
-            "desc": "Peso fabricado por tipos de Máquina",
+            "desc": "Detalle de Producción en INGETEK",
             "icon": "🏭",
             "color": "#18515F"
         },
         "Shipping Tickets": {
                     "url": "https://lookerstudio.google.com/reporting/f48f9cec-0818-40ce-88d8-40230da24336",
-                    "desc": "Reporte de embarques y sus facturaciones consolidadas.",
+                    "desc": "Detalle de Embarques y Facturas en INGETEK",
                     "icon": "🚚",
                     "color": "#18515F"
         },
         "Control Code (Order Summary)": {
                     "url": "https://lookerstudio.google.com/reporting/b5d47fc5-0c79-43ba-aa0f-774fc41378a1",
-                    "desc": "Resumenes de Órdenes y Control Code",
+                    "desc": "Resúmenes de Órdenes y Control Code en INGETEK",
                     "icon": "🧾",
                     "color": "#18515F"
         }
@@ -40,7 +40,7 @@ dashboards = {
     "Contabilidad y Finanzas": {
         "Costos de Fabricación": {
             "url": "https://lookerstudio.google.com/s/hvVr9Q0O4LM",
-            "desc": "Análisis de costos por planta agrupadores de gestión",
+            "desc": "Análisis contable por planta y agrupadores de gestión en INGETEK",
             "icon": "📊",
             "color": "#18515F"
             }
@@ -49,7 +49,7 @@ dashboards = {
     "Back-Office":{
         "Kardex Documentos": {
             "url": "https://lookerstudio.google.com/s/tCRtYVpGMIU",
-            "desc": "Control de movimientos de documentos por área",
+            "desc": "Control de movimientos de documentos por área en INGETEK",
             "icon": "📑",
             "color": "#18515F"
         }
