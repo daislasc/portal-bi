@@ -57,7 +57,7 @@ dashboards = {
 
     "Documentación y Autoservicio": {
         "Plantilla - Shipping Tickets": {
-            "url": "https://lookerstudio.google.com/reporting/345f015e-413d-479a-af79-852755471920/preview",
+            "url": "https://lookerstudio.google.com/reporting/f1120983-20f8-4f93-b630-6a3b04f7e61c/preview",
             "desc": "Personaliza tu propio reporte de Embarques",
             "icon": "🎨",
             "color": "#18515F"
