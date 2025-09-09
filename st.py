@@ -24,16 +24,16 @@ dashboards = {
             "color": "#18515F"
         },
         "Embarques y Facturas": {
-                    "url": "https://lookerstudio.google.com/reporting/f48f9cec-0818-40ce-88d8-40230da24336",
-                    "desc": "Detalle de Embarques y Facturas en INGETEK",
-                    "icon": "🚚",
-                    "color": "#18515F"
+            "url": "https://lookerstudio.google.com/reporting/f48f9cec-0818-40ce-88d8-40230da24336",
+            "desc": "Detalle de Embarques y Facturas en INGETEK",
+            "icon": "🚚",
+            "color": "#18515F"
         },
         "Resumen de Órdenes": {
-                    "url": "https://lookerstudio.google.com/reporting/b5d47fc5-0c79-43ba-aa0f-774fc41378a1",
-                    "desc": "Resúmenes de Órdenes y Control Code en INGETEK",
-                    "icon": "🧾",
-                    "color": "#18515F"
+            "url": "https://lookerstudio.google.com/reporting/b5d47fc5-0c79-43ba-aa0f-774fc41378a1",
+            "desc": "Resúmenes de Órdenes y Control Code en INGETEK",
+            "icon": "🧾",
+            "color": "#18515F"
         }
     },
 
@@ -43,10 +43,10 @@ dashboards = {
             "desc": "Análisis contable por planta y agrupadores de gestión en INGETEK",
             "icon": "📊",
             "color": "#18515F"
-            }
+        }
     },
 
-    "Back-Office":{
+    "Back-Office": {
         "Kardex Documentos": {
             "url": "https://lookerstudio.google.com/s/tCRtYVpGMIU",
             "desc": "Control de movimientos de documentos por área en INGETEK",
@@ -63,7 +63,7 @@ dashboards = {
             "color": "#18515F"
         },
         "Guía Looker Studio": {
-            "url": "#",  # <- Indicamos que es un instructivo interno
+            "url": "INSTRUCTIVO",  # <- marcador especial
             "desc": "Aprende buenas prácticas para crear y editar dashboards.",
             "icon": "📘",
             "color": "#18515F"
@@ -73,11 +73,57 @@ dashboards = {
 
 # Función para renderizar tarjetas
 def render_card(title, url, desc, icon, color):
-    if url == "#":
-        # Caso especial: mostrar instructivo dentro de la app
-        with st.expander(f"{icon} {title}"):
+    if url == "INSTRUCTIVO":
+        # Tarjeta que abre el instructivo interno
+        st.markdown(f"""
+        <div style="
+            border: 1px solid #ddd; 
+            border-radius: 12px; 
+            padding: 20px; 
+            margin: 10px 0; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+            background-color: #fff;
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        ">
+            <div style="font-size:32px; margin-bottom:10px;">{icon}</div>
+            <h3 style="color:{color}; margin-bottom:8px;">{title}</h3>
+            <p style="font-size:14px; color:#555; flex-grow:1;">{desc}</p>
+            <button onclick="window.dispatchEvent(new Event('show_instructivo'))" style="
+                text-decoration:none; 
+                color:white; 
+                background-color:{color}; 
+                padding:10px 14px; 
+                border:none;
+                border-radius:6px;
+                font-weight:bold;
+                text-align:center;
+                cursor:pointer;
+            ">Abrir Guía</button>
+        </div>
+        """, unsafe_allow_html=True)
+
+        # Listener JS para disparar expansión
+        st.markdown("""
+        <script>
+        const handler = () => {
+            const iframe = window.parent.document.querySelector('iframe');
+            if (iframe) {
+                iframe.contentWindow.postMessage("show_instructivo", "*");
+            }
+        }
+        window.addEventListener("show_instructivo", handler);
+        </script>
+        """, unsafe_allow_html=True)
+
+        # Renderizamos el instructivo abajo (cuando toque)
+        with st.expander("📘 Guía de Looker Studio - Instructivo"):
             st.markdown(instructivo_text, unsafe_allow_html=True)
+
     else:
+        # Tarjeta normal de dashboard
         st.markdown(f"""
         <div style="
             border: 1px solid #ddd; 
