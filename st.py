@@ -17,19 +17,19 @@ with open("instructivo_dashboards.md", "r", encoding="utf-8") as f:
 # Diccionario: Unidad de negocio -> Dashboards
 dashboards = {
     "Operación": {
-        "Processing Tag": {
+        "Producción": {
             "url": "https://lookerstudio.google.com/s/u80uqadK7oQ",
             "desc": "Detalle de Producción en INGETEK",
             "icon": "🏭",
             "color": "#18515F"
         },
-        "Shipping Tickets": {
+        "Embarques y Facturas": {
                     "url": "https://lookerstudio.google.com/reporting/f48f9cec-0818-40ce-88d8-40230da24336",
                     "desc": "Detalle de Embarques y Facturas en INGETEK",
                     "icon": "🚚",
                     "color": "#18515F"
         },
-        "Control Code (Order Summary)": {
+        "Resumen de Órdenes": {
                     "url": "https://lookerstudio.google.com/reporting/b5d47fc5-0c79-43ba-aa0f-774fc41378a1",
                     "desc": "Resúmenes de Órdenes y Control Code en INGETEK",
                     "icon": "🧾",
