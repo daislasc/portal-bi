@@ -118,10 +118,6 @@ def render_card(title, url, desc, icon, color):
         </script>
         """, unsafe_allow_html=True)
 
-        # Renderizamos el instructivo abajo (cuando toque)
-        with st.expander("📘 Guía de Looker Studio - Instructivo"):
-            st.markdown(instructivo_text, unsafe_allow_html=True)
-
     else:
         # Tarjeta normal de dashboard
         st.markdown(f"""
