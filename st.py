@@ -81,7 +81,7 @@ dashboards = {
             }
         },
         "documentacion": {
-            "Embarques y Facturas": {
+            "Looker Studio": {
                 "plantilla": {
                     "url": "https://lookerstudio.google.com/navigation/templates",
                     "desc": "Templates Generales Looker Studio",
