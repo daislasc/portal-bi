@@ -73,6 +73,7 @@ dashboards = {
     },
 
     "Looker Studio":{
+        "dashboards":{},
         "documentacion": {
             "url": "https://deacero.atlassian.net/wiki/spaces/~63c73454176040ff3bd1be39/pages/1757839401/Instructivo+para+Crear+y+Editar+Dasboards+en+Looker+Studio",
             "desc": "Instructivo para Crear y Editar Dashboards en Looker Studio"
