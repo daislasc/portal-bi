@@ -14,7 +14,7 @@ st.title("BI Portal")
 with open("instructivo_dashboards.md", "r", encoding="utf-8") as f:
     instructivo_text = f.read()
 
-# Diccionario principal SIN íconos
+# Diccionario principal
 dashboards = {
     "Operación": {
         "dashboards": {
@@ -34,15 +34,17 @@ dashboards = {
                 "color": "#18515F"
             }
         },
+        # 🔹 Estructura nueva: cada dashboard tiene Plantilla + Documentación
         "documentacion": {
-            "Plantilla - Embarques y Facturas": {
-                "url": "https://lookerstudio.google.com/reporting/f1120983-20f8-4f93-b630-6a3b04f7e61c/preview",
-                "desc": "Personaliza tu propio reporte de Embarques",
-                "color": "#18515F"
-            },
-            "Guía Looker Studio": {
-                "url": "https://deacero.atlassian.net/wiki/spaces/~63c73454176040ff3bd1be39/pages/1757839401/Instructivo+para+Crear+y+Editar+Dasboards+en+Looker+Studio",
-                "desc": "Aprende buenas prácticas para crear y editar dashboards.",
+            "Embarques y Facturas": {
+                "plantilla": {
+                    "url": "https://lookerstudio.google.com/reporting/f1120983-20f8-4f93-b630-6a3b04f7e61c/preview",
+                    "desc": "Personaliza tu propio reporte de Embarques",
+                },
+                "documentacion": {
+                    "url": "https://deacero.atlassian.net/wiki/spaces/~63c73454176040ff3bd1be39/pages/1757839401/Instructivo+para+Crear+y+Editar+Dasboards+en+Looker+Studio",
+                    "desc": "Aprende buenas prácticas para crear y editar dashboards.",
+                },
                 "color": "#18515F"
             }
         }
@@ -71,7 +73,7 @@ dashboards = {
     }
 }
 
-# Función para renderizar tarjetas SIN iconos
+# Función para renderizar tarjetas normales
 def render_card(title, url, desc, color):
     st.markdown(f"""
     <div style="
@@ -101,31 +103,37 @@ def render_card(title, url, desc, color):
     </div>
     """, unsafe_allow_html=True)
 
-# 🔹 Barra lateral de navegación
+# 🔹 Barra lateral
 st.sidebar.title("Menú de Navegación")
 
 selected_section = st.sidebar.radio("Secciones:", list(dashboards.keys()))
-subsection = st.sidebar.radio(
-    "Subsección:",
-    ["Dashboards", "Documentación y Autoservicio"]
-)
+subsection = st.sidebar.radio("Subsección:", ["Dashboards", "Documentación y Autoservicio"])
 
-# 🔹 Renderizado dinámico según selección
+# 🔹 Render dinámico
 st.header(f"{selected_section} - {subsection}")
 
-content = (
-    dashboards[selected_section]["dashboards"]
-    if subsection == "Dashboards"
-    else dashboards[selected_section]["documentacion"]
-)
+if subsection == "Dashboards":
+    content = dashboards[selected_section]["dashboards"]
+    if not content:
+        st.info("No hay dashboards disponibles en esta sección.")
+    else:
+        items = list(content.items())
+        cols_per_row = 3
+        for i in range(0, len(items), cols_per_row):
+            cols = st.columns(cols_per_row)
+            for j, (name, info) in enumerate(items[i:i+cols_per_row]):
+                with cols[j]:
+                    render_card(name, info["url"], info["desc"], info["color"])
 
-if not content:
-    st.info("No hay contenido disponible en esta subsección.")
-else:
-    items = list(content.items())
-    cols_per_row = 3
-    for i in range(0, len(items), cols_per_row):
-        cols = st.columns(cols_per_row)
-        for j, (name, info) in enumerate(items[i:i+cols_per_row]):
-            with cols[j]:
-                render_card(name, info["url"], info["desc"], info["color"])
+else:  # Documentación y Autoservicio
+    content = dashboards[selected_section]["documentacion"]
+    if not content:
+        st.info("No hay documentación disponible en esta sección.")
+    else:
+        for dashboard_name, data in content.items():
+            color = data.get("color", "#18515F")
+            with st.expander(f"Autoservicio de {dashboard_name}", expanded=False):
+                st.markdown(f"""
+                <p><b>Plantilla:</b> <a href="{data['plantilla']['url']}" target="_blank">{data['plantilla']['desc']}</a></p>
+                <p><b>Documentación:</b> <a href="{data['documentacion']['url']}" target="_blank">{data['documentacion']['desc']}</a></p>
+                """, unsafe_allow_html=True)
