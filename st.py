@@ -38,7 +38,7 @@ dashboards = {
         "documentacion": {
             "Embarques y Facturas": {
                 "plantilla": {
-                    "url": "https://lookerstudio.google.com/u/0/reporting/be2fcf5b-94e7-497c-8864-eb3ac0c255fb/page/p_0o6zkpa7td/preview",
+                    "url": "https://lookerstudio.google.com/u/0/reporting/96bd7f9a-ad9c-4b02-a866-28dab9b0816c/page/p_ee36dyg2vd/preview",
                     "desc": "Personaliza tu propio reporte de Embarques",
                 },
                 "documentacion": {
