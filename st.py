@@ -32,6 +32,11 @@ dashboards = {
                 "url": "https://lookerstudio.google.com/reporting/b5d47fc5-0c79-43ba-aa0f-774fc41378a1",
                 "desc": "Resúmenes de Órdenes y Control Code en INGETEK",
                 "color": "#18515F"
+            },
+            "Inventario": {
+                "url": "https://lookerstudio.google.com/u/0/reporting/6ea32ee4-1970-4116-99d0-c6a8fe2e9efa/page/p_ee36dyg2vd/edit",
+                "desc": "Inventario de Productos en Almacenes de INGETEK",
+                "color": "#18515F"
             }
         },
         # 🔹 Estructura nueva: cada dashboard tiene Plantilla + Documentación
