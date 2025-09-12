@@ -49,7 +49,8 @@ dashboards = {
                 "documentación": {
                     "url": "https://deacero.atlassian.net/wiki/external/NjU0NGE5MWQyZjY0NDcxOTk1Nzk2MGM3YzA2YTk5NmQ",
                     "desc": "Documentación para Autoservicio de Reporte de Producción"
-                }
+                },
+                "color": "#18515F"
             },
 
             "Embarques y Facturas": {
