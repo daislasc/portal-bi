@@ -47,7 +47,7 @@ dashboards = {
                     "desc": "Personaliza tu propio reporte de Embarques",
                 },
                 "documentacion": {
-                    "url": "https://deacero.atlassian.net/wiki/spaces/~63c73454176040ff3bd1be39/pages/1760559189/Documentaci+n+ShippingTickets",
+                    "url": "https://deacero.atlassian.net/wiki/external/YjgyMzA0YTdkNWUyNDgyZWI1NGM5NTA5Zjc0NDMyZjQ",
                     "desc": "Descripción general de los campos a utilizar en el Dashboard.",
                 },
                 "color": "#18515F"
