@@ -58,7 +58,7 @@ dashboards = {
             "color": "#18515F"
         }
     ],
-    "Looker Studio": [
+    "Looker Studio Docs": [
         {
             "title": "Dashboard Ejemplo",
             "url_dashboard": "https://lookerstudio.google.com/s/u80uqadK7oQ",
