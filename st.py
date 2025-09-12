@@ -41,18 +41,6 @@ dashboards = {
         },
         # 🔹 Estructura nueva: cada dashboard tiene Plantilla + Documentación
         "documentacion": {
-            "Producción": {
-                "plantilla": {
-                    "url": "",
-                    "desc": "Personaliza tu propio reporte de Producción"
-                },
-                "documentación": {
-                    "url": "https://deacero.atlassian.net/wiki/external/NjU0NGE5MWQyZjY0NDcxOTk1Nzk2MGM3YzA2YTk5NmQ",
-                    "desc": "Documentación para Autoservicio de Reporte de Producción"
-                },
-                "color": "#18515F"
-            },
-
             "Embarques y Facturas": {
                 "plantilla": {
                     "url": "https://lookerstudio.google.com/u/0/reporting/96bd7f9a-ad9c-4b02-a866-28dab9b0816c/page/p_ee36dyg2vd/preview",
