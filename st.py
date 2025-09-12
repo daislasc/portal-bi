@@ -86,7 +86,7 @@ def render_card(title, url_dashboard, url_docu, color):
         <h3 style="color:{color}; margin-bottom:8px;">{title}</h3>
         <p style="font-size:14px; color:#18515F; font-weight:bold;">
             <a href="{url_docu}" target="_blank" style="color:{color}; text-decoration:underline;">
-                Ver documentación en Confluence
+                Documentación y Autoservicio
             </a>
         </p>
         <a href="{url_dashboard}" target="_blank" style="
