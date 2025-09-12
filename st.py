@@ -54,7 +54,7 @@ dashboards = {
             },
             "Producción": {
                 "plantilla": {
-                    "url": "",
+                    "url": "https://lookerstudio.google.com/u/0/reporting/96bd7f9a-ad9c-4b02-a866-28dab9b0816c/page/p_ee36dyg2vd/preview",
                     "desc": "Personaliza tu propio reporte de Producción"
                 },
                 "documentación": {
