@@ -32,7 +32,7 @@ dashboards = {
         {
             "title": "Resumen de Órdenes",
             "url_dashboard": "https://lookerstudio.google.com/reporting/b5d47fc5-0c79-43ba-aa0f-774fc41378a1",
-            "url_docu": "https://deacero.atlassian.net/wiki/external/YjgyMzA0YTdkNWUyNDgyZWI1NGM5NTA5Zjc0NDMyZjQ",
+            "url_docu": "https://deacero.atlassian.net/wiki/external/NWUyMWViOTgzNDFmNDE5ZGE2YTRhM2RjMmYyMjM1NDE",
             "color": "#18515F"
         },
         {
@@ -62,7 +62,7 @@ dashboards = {
         {
             "title": "Proyectos Contratados",
             "url_dashboard": "https://lookerstudio.google.com/reporting/5ada6ad5-d915-469e-b9e3-c5ad7816ae08",
-            "url_docu": "https://deacero.atlassian.net/wiki/external/YjgyMzA0YTdkNWUyNDgyZWI1NGM5NTA5Zjc0NDMyZjQ",
+            "url_docu": "https://deacero.atlassian.net/wiki/external/YjE5NWU1ZDYwMjY5NDc4N2E3NjM3YTM1Njc4NjA3NjY",
             "color": "#18515F"
         }
     ],
