@@ -65,6 +65,14 @@ dashboards = {
             "url_docu": "https://deacero.atlassian.net/wiki/spaces/~63c73454176040ff3bd1be39/pages/1757839401/Instructivo+para+Crear+y+Editar+Dasboards+en+Looker+Studio",
             "color": "#18515F"
         }
+    ],
+    "Comercial": [
+        {
+            "title": "Proyectos Contratados",
+            "url_dashboard": "https://lookerstudio.google.com/reporting/5ada6ad5-d915-469e-b9e3-c5ad7816ae08",
+            "url_docu": "https://deacero.atlassian.net/wiki/external/YjgyMzA0YTdkNWUyNDgyZWI1NGM5NTA5Zjc0NDMyZjQ",
+            "color": "#18515F"
+        }
     ]
 }
 
