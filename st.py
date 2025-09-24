@@ -64,6 +64,12 @@ dashboards = {
             "url_dashboard": "https://lookerstudio.google.com/reporting/5ada6ad5-d915-469e-b9e3-c5ad7816ae08",
             "url_docu": "https://deacero.atlassian.net/wiki/external/YjE5NWU1ZDYwMjY5NDc4N2E3NjM3YTM1Njc4NjA3NjY",
             "color": "#18515F"
+        },
+        {
+            "title": "Deuda Comercial",
+            "url_dashboard": "https://lookerstudio.google.com/reporting/746dd37b-1c5c-44a2-87f5-8a854571f2f3/page/gdQZF",
+            "url_docu": "https://deacero.atlassian.net/wiki/external/YjE5NWU1ZDYwMjY5NDc4N2E3NjM3YTM1Njc4NjA3NjY",
+            "color": "#18515F"
         }
     ],
     "Looker Studio Docs": [
