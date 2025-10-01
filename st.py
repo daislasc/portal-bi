@@ -38,7 +38,7 @@ dashboards = {
         {
             "title": "Inventario",
             "url_dashboard": "https://lookerstudio.google.com/u/0/reporting/6ea32ee4-1970-4116-99d0-c6a8fe2e9efa/page/p_hvqg5pwhwd/edit",
-            "url_docu": "https://deacero.atlassian.net/wiki/external/YjgyMzA0YTdkNWUyNDgyZWI1NGM5NTA5Zjc0NDMyZjQ",
+            "url_docu": "https://deacero.atlassian.net/wiki/external/M2Q1ZjczYWRlMDkzNDU3MWJhNWRjYjJjM2Y5ZTRmMTU",
             "color": "#18515F"
         }
     ],
